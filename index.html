@@ -2,19 +2,75 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title id="title"><H1> freeCodeCamp Survey Form</H1></title>
+    <title ></title>
+    <H1 id="title"> freeCodeCamp Survey Form</H1>
     <p id="description"> Thank you for taking the time to help us improve the platform</p>
   </head>
 
   <body>
     <form id="survey-form">
       <label id="name" >Name</label>
-     <input id="name" type ="text" placeholder="Enter your name">
+     <input id="name" type ="text" placeholder="Enter your name"></br>
      <label id="email" >Email</label>
      <input id="email" type ="text" placeholder="Enter your email" pattern= "/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
-     required>
+     required></br>
      <label id="number" >Age</label>
-     <input id="number" type ="number" min="1" max="70" placeholder="Enter your age">
+     <input id="number" type ="number" min="1" max="70" placeholder="Enter your age"></br>
+     <label id="dropdown" >Which option best describes your current role?</label></br>
+     <select id = "dropdown " placeholder="Select current role" >
+      <option value="student">student</option>
+      <option value="full time job">full time job</option>
+      <option value="full time learner">full time learner</option>
+      <option value="Prefer not to say">Prefer not to say</option>
+      <option value="others">others</option>
+     </select></br>
+     <label> Would you recommend freeCodeCamp to a friend?</label></br>
+     <input type="radio" id="Definitely">
+     <label  id="Definitely">Definitely</label></br>
+     <input type="radio" id="Maybe">
+     <label  id="Maybe">Maybe</label></br>
+     <input type="radio" id="Not sure">
+     <label  id="Not sure">Not sure</label></br></br>
+
+     <label>What is your favorite feature of freeCodeCamp?</label></br>
+     <select id = "dropdown " placeholder="Select current role" >
+      <option value="Challenges">Challenges</option>
+      <option value="Projects">Projects</option>
+      <option value="Community">Community</option>
+      <option value="Open source">Open source</option>
+     
+     </select></br>
+        
+     <label>What would you like to see improved? (Check all that apply)</label></br>
+      <input type="checkbox" id="Front-end Projects" name="Front-end Projects" value="Front-end Projects">
+      <label> Front-end Projects</label><br>
+      <input type="checkbox" id="Back-end Projects" name="Back-end Projects" value="Back-end Projects">
+      <label> Back-end Projects</label><br>
+      <input type="checkbox" id="Data Visualization" name="Data Visualization" value="Data Visualization">
+      <label> Data Visualization</label><br>
+      <input type="checkbox" id="Challenges" name="Challenges" value="Challenges">
+      <label> Challenges</label><br>
+      <input type="checkbox" id="Open Source Community" name="Open Source Community" value="Open Source Community">
+      <label> Open Source Community</label><br>
+      <input type="checkbox" id="Gitter help rooms" name="Gitter help rooms" value="Gitter help rooms">
+      <label> Gitter help rooms</label><br>
+      <input type="checkbox" id="Videos" name="Videos" value="Videos">
+      <label> Videos</label><br>
+      <input type="checkbox" id="City Meetups" name="City Meetups" value="City Meetups">
+      <label> City Meetups</label><br>
+      <input type="checkbox" id="Wiki" name="Wiki" value="wiki">
+      <label> Wiki</label><br>
+      <input type="checkbox" id="Forum" name="Forum" value="Forum">
+      <label> Forum</label><br>
+      <input type="checkbox" id="Additional Courses" name="Additional Courses" value="Additional Courses">
+      <label> Additional Courses</label><br>
+
+      <label> Any comments or suggestions?</label>
+      <input type="textarea" id="textarea" placeholder="Enter your comment here..."></br>
+
+      <input type="button" id="submit" name="Submit" value="Submit">
+
+
 
     </form>
    <p>"Hello World!, We are software developers"</p>
